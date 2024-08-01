@@ -22,6 +22,7 @@ The algorithm works by using the ResNet-18 model that has been retrained to reco
    ls models/Organic_Recyclable/ Then set the NET and DATASET variables:NET=models/Organic_Recyclable DATASET=(What you have set for your data set)
 4. **Run the Model:**
    Execute the following command to test the model:
+   ```bash
    imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/(The name of your test image) test1.jpg
 
 For more details, [view a video explanation here](video link).
